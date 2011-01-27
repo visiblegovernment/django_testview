@@ -1,0 +1,12 @@
+{% load i18n %}
+<html>
+<head>
+</head>
+<body>
+<h1>Apps with TestViews Defined:</h1>
+<ul>{% for app in apps %}
+<li><a href='{% url show-testurls app %}'>{{app}}</a></li>
+{% endfor %}
+</ul>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{% load i18n %}
+<html>
+<head>
+</head>
+<body>
+{% if error %}{{error}}{% endif %}
+<a href='{% url show-testurls app %}'>Up</a> |
+{% if prev %} <a href='{% url testurl app prev %}'>Prev</a> | {% endif %}
+{% if next %} <a href='{% url testurl app next %}'>Next</a>  | {% endif %}{{testtext}} ({{testurl}})
+<iframe src='{{testurl}}' width='100%' height='1500'>
+</body>
+</html>

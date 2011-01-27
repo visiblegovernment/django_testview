@@ -1,0 +1,12 @@
+django_testview 
+---------------
+
+Have you changed your app css recently?  Want to know 
+if you've affected other pages, but don't want to do a 
+lot of typing or data entry?  django_testview lets you 
+click through a series of pre-defined urls so you can 
+view every page of your app as part of standard 
+pre-deployment testing.
+
+For usage and screenshots, see:
+https://github.com/visiblegovernment/django_testview/wiki     

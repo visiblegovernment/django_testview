@@ -1,0 +1,14 @@
+{% load i18n %}
+<html>
+<head>
+</head>
+<body>
+{% if error %}{{error}}{% endif %}
+<a href='{% url show-testurl-apps %}'>Up</a>
+<h1>Test Views in {{app}}:</h1>
+<ol>{% for url,text in urls %}
+<li><a href='{% url testurl app forloop.counter0 %}'>{{text}}</a></li>
+{% endfor %}
+</ol>
+</body>
+</html>
