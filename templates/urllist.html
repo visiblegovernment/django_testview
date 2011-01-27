@@ -7,7 +7,7 @@
 <a href='{% url show-testurl-apps %}'>Up</a>
 <h1>Test Views in {{app}}:</h1>
 <ol>{% for url,text in urls %}
-<li><a href='{% url testurl app forloop.counter1 %}'>{{text}}</a></li>
+<li><a href='{% url testurl app forloop.counter %}'>{{text}}</a></li>
 {% endfor %}
 </ol>
 </body>
