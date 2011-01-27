@@ -39,12 +39,12 @@ def testurl(request,app,test_id):
     else:
         error = "Failed to import from app %s" % (app)
     test_id = int(test_id)
-    (test_url,test_text) = urls[ test_id ]
+    (test_url,test_text) = urls[ test_id - 1]
     prev = None
     next = None
-    if test_id != 0:
+    if test_id != 1:
         prev = test_id - 1
-    if test_id != len(urls) -1:
+    if test_id != len(urls):
         next = test_id + 1
     return render_to_response("testview.html",
                 {"testurl": test_url,

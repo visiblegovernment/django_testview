@@ -3,7 +3,7 @@ from django.db.models.signals import post_syncdb
 from django.contrib.auth.models import Group, Permission
 from django.contrib.contenttypes.models import ContentType
 from django.core.management import call_command
-from testview.models import TestViewDefinitions
+from django_testview.models import TestViewDefinitions
 from django.conf import settings
 
 def load_testurl_fixtures(sender, **kwargs):
