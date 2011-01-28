@@ -7,7 +7,7 @@ from django_testview.models import TestViewDefinitions
 from django.conf import settings
 
 def load_testurl_fixtures(sender, **kwargs):
-    if kwargs['app'].__name__ != 'testview.models':
+    if kwargs['app'].__name__ != 'django_testview.models':
         return
     for app in settings.INSTALLED_APPS:
         definitions = TestViewDefinitions(app)
